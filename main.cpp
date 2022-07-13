@@ -8,6 +8,7 @@
 #include <windows.h>
 #include <ctype.h>
 #include "rlutil.h"
+#include <MMSystem.h>
 
 using namespace std;
 using namespace rlutil;
@@ -20,6 +21,7 @@ using namespace rlutil;
 #include "modosimulado.h"
 
 int main(){
+
     char nombreIndividual[30],nombreIND[30];
     int captura1[2],p1,t1,pasoSimulado=0;
     char nombreSimulado[30], nombreSi[30];
@@ -27,11 +29,10 @@ int main(){
     char multijugador[2][30],nombreM[30];
     int puntajeMulti[2],tiradasMulti[2],posM[1],valor,puntajeM,tiradasM;
     int pasoJugador1=0,pasoJugador2=0;
-
-
-    system("title JUEGO DE LA GENERALA");
     int y=0;
 
+    system("title JUEGO DE LA GENERALA");
+    PlaySound(TEXT( "music.wav" ) ,NULL,SND_ASYNC);
     do{
 
         rlutil::hidecursor();
@@ -56,11 +57,13 @@ int main(){
             case 1:///ENTER
                    switch(y){
                         case 0:
+
                                 JUGADOR1(nombreIndividual,captura1);
                                 pasoJugador1++;
 
                                 if(pasoJugador1==1){strcpy(nombreIND,nombreIndividual);p1=captura1[0];t1=captura1[1];}
                                 else if(captura1[0]>p1){strcpy(nombreIND,nombreIndividual);p1=captura1[0];t1=captura1[1];}
+                                PlaySound(TEXT( "music.wav" ) ,NULL,SND_ASYNC);
                         break;
                         case 1:
                                 JUGADOR2(multijugador,puntajeMulti,tiradasMulti,posM);
@@ -71,16 +74,18 @@ int main(){
                                     strcpy(nombreM,multijugador[valor]);puntajeM=puntajeMulti[valor];tiradasM=tiradasMulti[valor];}
                                 else if(puntajeMulti[valor]>puntajeM){
                                    strcpy(nombreM,multijugador[valor]);puntajeM=puntajeMulti[valor];tiradasM=tiradasMulti[valor];}
-
+                                PlaySound(TEXT( "music.wav" ) ,NULL,SND_ASYNC);
                         break;
                         case 2:
                                 SIMULADO(nombreSimulado,capturaSim);
                                 pasoSimulado++;
                                 if(pasoSimulado==1){strcpy(nombreSi,nombreSimulado);ps=capturaSim[0];ts=capturaSim[1];}
                                 else if(capturaSim[0]>ps){strcpy(nombreSi,nombreSimulado);ps=capturaSim[0];ts=capturaSim[1];}
+                                PlaySound(TEXT( "music.wav" ) ,NULL,SND_ASYNC);
                         break;
                         case 3:
                                 PUNTUACIONES(nombreIND,p1,t1,pasoJugador1,nombreM,puntajeM,tiradasM,pasoJugador2,nombreSi,ps,ts,pasoSimulado);
+                                PlaySound(TEXT( "music.wav" ) ,NULL,SND_ASYNC);
                         break;
                         case 4:
                                 system("cls");

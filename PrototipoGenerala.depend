@@ -236,3 +236,47 @@
 
 1657686169 c:\users\lei_v\desktop\tp generala\prototipogeneralafinal\prototipogenerala\modosimulado.h
 
+1657708296 source:c:\users\lei_v\desktop\tp generala\prototipogeneralafinal\prototipogeneralafinal\prototipogenerala\main.cpp
+	<iostream>
+	<cstring>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	<string>
+	<windows.h>
+	<ctype.h>
+	"rlutil.h"
+	<MMSystem.h>
+	"funciones.h"
+	"jugador1.h"
+	"funciones2.h"
+	"jugador2.h"
+	"puntuaciones.h"
+	"modosimulado.h"
+
+1656302738 c:\users\lei_v\desktop\tp generala\prototipogeneralafinal\prototipogeneralafinal\prototipogenerala\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1657657790 c:\users\lei_v\desktop\tp generala\prototipogeneralafinal\prototipogeneralafinal\prototipogenerala\funciones.h
+
+1657707421 c:\users\lei_v\desktop\tp generala\prototipogeneralafinal\prototipogeneralafinal\prototipogenerala\jugador1.h
+
+1657649969 c:\users\lei_v\desktop\tp generala\prototipogeneralafinal\prototipogeneralafinal\prototipogenerala\funciones2.h
+
+1657708524 c:\users\lei_v\desktop\tp generala\prototipogeneralafinal\prototipogeneralafinal\prototipogenerala\jugador2.h
+
+1657708745 c:\users\lei_v\desktop\tp generala\prototipogeneralafinal\prototipogeneralafinal\prototipogenerala\puntuaciones.h
+
+1657708524 c:\users\lei_v\desktop\tp generala\prototipogeneralafinal\prototipogeneralafinal\prototipogenerala\modosimulado.h
+

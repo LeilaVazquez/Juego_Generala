@@ -27,9 +27,9 @@ PUNTUACIONES(char nombreI[],int p1,int t1,int jugo1,char nombreM[],int puntajeM,
 
     if(jugo1==0){gotoxy(5,10);cout<<"No hay partidas registradas para modo un jugador"<<endl;}
     else{
-            gotoxy(15,14);cout<<"Nombre: "<<nombreI<<endl;
-            gotoxy(15,15);cout<<"Puntaje: "<<p1<<endl;
-            gotoxy(15,16);cout<<"Lanzamientos: "<<t1<<endl;
+            gotoxy(15,10);cout<<"Nombre: "<<nombreI<<endl;
+            gotoxy(15,11);cout<<"Puntaje: "<<p1<<endl;
+            gotoxy(15,12);cout<<"Lanzamientos: "<<t1<<endl;
     }
 
 

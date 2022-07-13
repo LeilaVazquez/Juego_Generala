@@ -3,6 +3,7 @@
 
 
 JUGADOR1(char nombre1[],int captura1[]){
+    PlaySound(NULL,NULL,0);
     int ronda=1,puntajeTotal=0;     ///Cabecera
     int tiradas=1,tiradasTotales=0; ///Cabecera 2
     int seguir=0;                   ///Para salir del do while por si ingresa algun caracter incorrecto

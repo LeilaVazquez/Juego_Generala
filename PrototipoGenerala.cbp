@@ -32,6 +32,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Linker>
+			<Add library="winmm" />
+		</Linker>
 		<Unit filename="funciones.h" />
 		<Unit filename="funciones2.h" />
 		<Unit filename="jugador1.h" />
