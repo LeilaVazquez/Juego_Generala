@@ -280,3 +280,47 @@
 
 1657708524 c:\users\lei_v\desktop\tp generala\prototipogeneralafinal\prototipogeneralafinal\prototipogenerala\modosimulado.h
 
+1657871982 source:c:\users\lei_v\desktop\reposgithub\juego_generala\main.cpp
+	<iostream>
+	<cstring>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	<string>
+	<windows.h>
+	<ctype.h>
+	"rlutil.h"
+	<MMSystem.h>
+	"funciones.h"
+	"jugador1.h"
+	"funciones2.h"
+	"jugador2.h"
+	"puntuaciones.h"
+	"modosimulado.h"
+
+1656302738 c:\users\lei_v\desktop\reposgithub\juego_generala\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1657872860 c:\users\lei_v\desktop\reposgithub\juego_generala\funciones.h
+
+1657873200 c:\users\lei_v\desktop\reposgithub\juego_generala\jugador1.h
+
+1657649969 c:\users\lei_v\desktop\reposgithub\juego_generala\funciones2.h
+
+1657708524 c:\users\lei_v\desktop\reposgithub\juego_generala\jugador2.h
+
+1657708745 c:\users\lei_v\desktop\reposgithub\juego_generala\puntuaciones.h
+
+1657872860 c:\users\lei_v\desktop\reposgithub\juego_generala\modosimulado.h
+

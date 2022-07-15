@@ -31,14 +31,18 @@ JUGADOR1(char nombre1[],int captura1[]){
         seguir=0;
 ///---------------------------------Generala servida--------------------
         if(ronda==1&&tiradas==1){
-            servida=generalaServida(vDados,5);
+            servida=generalaServida(vDados,5,captura1,puntajeTotal,tiradasTotales);
             if(servida==0){
                     rlutil::setBackgroundColor(rlutil::COLOR::RED);
                     locate(45,13);cout<<"Generala servida";
                     rlutil::setBackgroundColor(rlutil::COLOR::BLACK);
                     locate(1,16);system("pause");
                     tiradasTotales=1;puntajeTotal=100;system("cls");locate(45,13);cout<<"Generala servida";
-                    ganadorIndividual(nombre1,tiradasTotales,puntajeTotal);return 0;}
+                    ganadorIndividual(nombre1,tiradasTotales,puntajeTotal);
+                    captura1[0]=puntajeTotal;
+                    captura1[1]=tiradasTotales;
+                    return 0;
+                    }
         }
         combinaciones( vDados, 5, vComb);
         combDisponibles(vComb,puntajeParcial);

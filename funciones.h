@@ -658,7 +658,7 @@ void separa(int x,int y){
     cout<<"|";
 }
 
-int generalaServida(int vDados[],int tam){
+int generalaServida(int vDados[],int tam,int captura[],int puntajeTotal, int tiradasTotales){
     int i,servida=1,vRep[6];
 
         for(i=1;i<7;i++){
@@ -668,6 +668,9 @@ int generalaServida(int vDados[],int tam){
         for(i=0;i<6;i++){
             if(vRep[i]==5){servida=0;return servida;}/// sumar puntaje 100 pts,gana la  partida.
         }
+        captura[0]=puntajeTotal;
+        captura[1]=tiradasTotales;
+
 return servida;
 }
 
@@ -1009,6 +1012,7 @@ void MenuDeDadosM(int vDados[]) {
         }
     }
 }
+
 
 
 #endif // FUNCIONES_H_INCLUDED

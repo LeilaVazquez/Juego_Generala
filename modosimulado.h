@@ -51,14 +51,20 @@ SIMULADO(char nombreS[],int capturaS[]){
         seguir=0;
 ///---------------------------------Generala servida--------------------
         if(ronda==1&&tiradas==1){
-            servida=generalaServida(vDados,5);
+            servida=generalaServida(vDados,5,capturaS,puntajeTotal,tiradasTotales);
             if(servida==0){
                     rlutil::setBackgroundColor(rlutil::COLOR::RED);
                     locate(36,13);cout<<"Generala servida";
                     rlutil::setBackgroundColor(rlutil::COLOR::BLACK);
                     locate(1,16);system("pause");
                     tiradasTotales=1;puntajeTotal=100;system("cls");locate(45,13);cout<<"Generala servida";
-                    ganadorIndividual(nombreS,tiradasTotales,puntajeTotal);return 0;}
+                    ganadorIndividual(nombreS,tiradasTotales,puntajeTotal);
+                    capturaS[0]=puntajeTotal;
+                    capturaS[1]=tiradasTotales;
+                    return 0;
+                    }
+
+
         }
         combinaciones(vDados, 5, vComb);
         combDisponibles(vComb,puntajeParcial);
@@ -180,6 +186,7 @@ SIMULADO(char nombreS[],int capturaS[]){
     ganadorIndividual(nombreS,tiradasTotales,puntajeTotal);
     capturaS[0]=puntajeTotal;
     capturaS[1]=tiradasTotales;
+
 }
 
 
